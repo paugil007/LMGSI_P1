@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Cercador de pel·lícules tmdb">
+    <title>Cercador pel·lícules</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icon.png" >
 </head>
 <body>
     <header>
-       <a href="index.html"><img src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="tmdb" height="25px"></a> 
+       <a href="index.html"><img src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="tmdb" height="25"></a> 
        <nav>
         <ul>
-            <li><a href="">Buscador</a></li>
-            <li><a href="">Contacte</a></li>
+            <li><a href="#">Buscador</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
         </ul>
        </nav> 
        
@@ -27,8 +30,14 @@
         </p>
 
         <div>
-            <input type="text" placeholder="Cerca una pel·lícula per exemple">
-            <button>Cercar</button>
+            <form method="get" action="https://www.themoviedb.org/search">
+                <label for="Buscador">
+                    Busca 
+                </label>
+                <input type="search" name="query" id="Buscador" placeholder="Cerca una pel·lícula per exemple">
+                <button>Cercar</button>
+            </form>
+            
         </div>
 
         <section>
